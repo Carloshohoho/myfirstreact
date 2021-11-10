@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import Greet from './components/Greet';
+import Message from './components/Message';
+import Button from './components/Button';
 
 function App() {
   return (
@@ -9,15 +11,16 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>hi friends</p>
         <p>-Carlos</p>
-        <Greet/>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Greet name="Peter" heroName="iron man">
+        <Message/>
+        </Greet>
+        <Greet name="Tony" heroName="Spider man">
+        <Button/>
+        </Greet>
+        <Greet name="Tony" heroName="Hulk">
+        </Greet>
+        
+       
       </header>
     </div>
   );
