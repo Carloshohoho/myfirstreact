@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Greet from './components/Greet';
 
 function App() {
   return (
@@ -8,14 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>hi friends</p>
         <p>-Carlos</p>
-        <div>
-        <h1>
-            "Hello"
-            "Peter"
-            "a.k.a"
-            "Spiderman"
-            </h1>
-            </div>
+        <Greet/>
         <a
           className="App-link"
           href="https://reactjs.org"
